@@ -2,7 +2,7 @@ FROM node:12-alpine
 
 WORKDIR /usr/src/app
 COPY package*.json ./
-COPY lib ./
+COPY lib ./lib
 COPY server.js ./
 RUN npm install
 
